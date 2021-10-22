@@ -10,7 +10,7 @@ body{
     font-style: italic;
     font-size: 30px;
     padding-top: 1px;
-    padding-bottom: 15px;
+    padding-bottom: 1px;
     text-align: center;
 }
 
@@ -19,11 +19,11 @@ body{
     font-size: 25px;
     font-family: fantasy;
     padding-left: 50px;
-    font-style: oblique;
 }
 
 .para{
     margin: 40px;
+    padding-right: 600px;
     color: rgb(30, 93, 211);
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
