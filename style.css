@@ -1,0 +1,31 @@
+body{
+    background-color: bisque;
+    margin: 0px;
+}
+
+.hello{
+    color: rgb(2, 121, 224);
+    background: rgba(255, 130, 25);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#firstPara{
+    color: rgb(255, 0, 106);
+    font-size: 25px;
+    font-family: fantasy;
+    padding-left: 50px;
+    font-style: oblique;
+}
+
+.para{
+    margin: 40px;
+    color: rgb(30, 93, 211);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 50px coral;
+}
