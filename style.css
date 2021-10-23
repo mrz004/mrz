@@ -17,6 +17,7 @@ button{
     text-align: left;
     list-style-type: none;
     margin-top: 5px;
+    margin-bottom: 0px;
 }
 #navList li{
     display: inline;
@@ -60,9 +61,12 @@ img{
         padding-right: 40px;
         font-size: 20px;
     }
+    navList{
+     font-size: 12px;
+
+    }
     button{
         width: auto;
-        margin: 1px;
-        margin-right: 10px;
+        margin: 0px;
     }
   }
