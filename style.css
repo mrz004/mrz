@@ -9,26 +9,33 @@ button{
     border-radius: 15px;
     background-color: blue;
     height: 40px;
-    margin: 0px 35px auto 0px;
-
+    margin: 0px 12px auto 0px;
 }
 
 #navList{
     text-align: left;
     list-style-type: none;
-    margin-top: 5px;
+    margin-left: -1%;
+    margin-top: -1%;
+    padding: 2% 2% 0 4%;
     margin-bottom: 0px;
 }
 #navList li{
     display: inline;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-img{
-    margin: auto auto auto 0px;
+#navList img{
+    display: inline;
+    float: right;
+    margin: 1% 2%;
+    border-radius: 100%;
     width: 45px;
 }
 
 #hello{
+    background-color: brown;
     background-image: url("https://source.unsplash.com/1920x720/?red,premium,tech");
     color: rgb(2, 121, 224);
     height: auto;
@@ -36,6 +43,7 @@ img{
     font-style: italic;
     font-size: 45px;
     text-align: center;
+    margin: -2%;
 }
 
 #firstPara{
@@ -61,9 +69,15 @@ img{
         padding-right: 40px;
         font-size: 20px;
     }
-    navList{
+    #navList{
+        margin-left: -10%;
+        padding: 5% 2% 0 13%;
+    }
+    #navList img{
+        margin: -1% 2%;
+    }
+    #navbar {
      font-size: 12px;
-
     }
     button{
         width: auto;
