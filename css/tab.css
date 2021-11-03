@@ -27,3 +27,7 @@ flex-direction: column;
   .para{
       width: auto;
   }
+
+ p{
+     font-size: 0.7rem;
+  }
