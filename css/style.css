@@ -87,3 +87,7 @@ h1 {
   font-size: 3rem;
   color: rgb(160 60 140);
 }
+
+.footer{
+  overflow: hidden;
+}
