@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mrz | Codes | OOP Codes</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>
-            OBJECT ORIENTED PROGRAMMING USING C++
-        </h1>
+      <h1>OBJECT ORIENTED PROGRAMMING USING C++</h1>
     </header>
     <div id="pract1">
-        <h2>Practical 1</h2>
-        <div class="code">
-            <h3>
-                Q.1) 
-            </h3>
-            <pre>
+      <h2>Practical 1</h2>
+      <div class="code">
+        <h3>Q.1)</h3>
+        <pre>
                 #include&lt;iostream&gt;
                 #include&lt;cmath&gt;
                 
@@ -47,13 +43,12 @@
                     
                     return 0;
                 }
-            </pre>
-        </div>
-        <div class="code">
-            <h3>
-                Q.2) 
-            </h3>
-            <pre>
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h3>Q.2)</h3>
+        <pre>
                 #include&lt;iostream&gt;
 
                 using namespace std;
@@ -77,16 +72,13 @@
                     
                     return 0;
                 }
-            </pre>
-        </div>
-        <div class="code">
-            <h2>
-                Extra questions
-            </h2>
-            <h3>
-                Q.1) 
-            </h3>
-            <pre>
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h2>Extra questions</h2>
+        <h3>Q.1)</h3>
+        <pre>
                 #include&lt;iostream&gt;
                 using namespace std;
                 
@@ -103,13 +95,12 @@
                     cout&lt;&lt;&#34;\nThe values after swap are\n\ta = &#34;&lt;&lt;a&lt;&lt;&#34;, b = &#34;&lt;&lt;b;
                     return 0;
                 }
-            </pre>
-        </div>
-        <div class="code">
-            <h3>
-                Q.2) 
-            </h3>
-            <pre>
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h3>Q.2)</h3>
+        <pre>
                 #include&lt;iostream&gt;
                 using namespace std;
                 
@@ -121,13 +112,12 @@
                     cout&lt;&lt;&#34;\n\nThe ascii value of &#34;&lt;&lt;a&lt;&lt;&#34; is &#34;&lt;&lt;int(a);
                     return 0;
                 }
-            </pre>
-        </div>
-        <div class="code">
-            <h3>
-                Q.3) 
-            </h3>
-            <pre>
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h3>Q.3)</h3>
+        <pre>
                 #include&lt;iostream&gt;
                 using namespace std;
                 
@@ -139,16 +129,15 @@
                     cout&lt;&lt;&#34;The gross salary after adding DA and HRA is : &#34;&lt;&lt;(salary*19/10)&lt;&lt;&#34;\n&#34;;
                     return 0;
                 }
-            </pre>
-        </div>
+            </pre
+        >
+      </div>
     </div>
     <div id="pract2">
-        <h2>Practical 2</h2>
-        <div class="code">
-            <h3>
-                Q.1) 
-            </h3>
-            <pre>
+      <h2>Practical 2</h2>
+      <div class="code">
+        <h3>Q.1)</h3>
+        <pre>
                 #include&lt;iostream&gt;
                 #include&lt;cmath&gt;
                 
@@ -172,13 +161,48 @@
                     
                     return 0;
                 }
-            </pre>
-        </div>
-        <div class="code">
-            <h3>
-                Q.3) 
-            </h3>
-            <pre>
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h3>Q.2)</h3>
+        <pre>
+                #include&lt;iostream&gt;
+                using namespace std;
+                
+                int main()
+                {
+                    int num, temp, mod, arm=0;
+                
+                    cout&lt;&lt;&#34;Enter the number : &#34;;
+                    cin&gt;&gt;num;
+                    temp=num;
+                
+                    while (temp!=0)
+                    {
+                        mod = temp%10;
+                        arm = arm + (mod*mod*mod);
+                        temp  = temp/10;
+                    }
+                    
+                    if (arm==num)
+                    {
+                        cout&lt;&lt;&#34;The number you entered is a armstrong number.&#34;;
+                    }
+                    else
+                    {
+                        cout&lt;&lt;&#34;The number you entered is NOT a armstrong number.&#34;;
+                    }
+                    
+                    
+                    return 0;
+                }
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h3>Q.3)</h3>
+        <pre>
                 #include&lt;iostream&gt;
                 using namespace std;
                 
@@ -204,16 +228,13 @@
                 
                     return 0;
                 }
-            </pre>
-        </div>
-        <div class="code">
-            <h2>
-                Extra questions
-            </h2>
-            <h3>
-                Q.) 
-            </h3>
-            <pre>
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h2>Extra questions</h2>
+        <h3>Q.)</h3>
+        <pre>
                 #include&lt;iostream&gt;
                 using namespace std;
                 
@@ -224,29 +245,37 @@
                 
                     cout&lt;&lt;&#34;Enter a number to check if it is prime : &#34;;
                     cin&gt;&gt;num;
-                                
-                    for (int i = 2; i &lt; num; i++)
+
+                    if((num%2)==0)
                     {
-                        if ((num%i)==0)
-                        {
-                            p=false;
-                            break;
-                        }
-                    }
-                
-                    if (p==true)
-                    {
-                            cout&lt;&lt;&#34;The entered number is a prime number.&#34;;
+                        p=false;
                     }
                     else
                     {
-                        cout&lt;&lt;&#34;The entered number is NOT a prime number.&#34;;
-                    }        
-                    
-                    return 0;
-                }
-            </pre>
-        </div>
+                        for (int i = 3; i &lt; num; i+=2)
+                        {
+                            if ((num%i)==0)
+                            {
+                                p=false;
+                                break;
+                            }
+                        }
+                    }
+                            
+                        if (p==true)
+                        {
+                            cout&lt;&lt;&#34;The entered number is a prime number.&#34;;
+                        }
+                        else
+                        {
+                            cout&lt;&lt;&#34;The entered number is NOT a prime number.&#34;;
+                        }        
+                        
+                        return 0;
+                    }
+                </pre
+        >
+      </div>
     </div>
-</body>
+  </body>
 </html>
