@@ -393,6 +393,54 @@ int main()
         >
       </div>
       </div>
+      <div id="pract4">
+        <h2 class="divider">Practical 4</h2>
+        <div class="code">
+          <h3>Q.1)</h3>
+          <pre>
+              </pre
+          >
+        </div>
+        <div class="code">
+          <h3>Q.2)</h3>
+          <pre>
+            #include&lt;iostream&gt;
+            using namespace std;
+            
+            int main()
+            {
+                int n;
+          
+                cout&lt;&lt;&#34;Enter the size of array : &#34;;
+                cin&gt;&gt;n;
+          
+                int a[n];
+          
+                for (int i = 0; i &lt; n; i++)
+                {
+                    cout&lt;&lt;&#34;Enter the element at index &#34;&lt;&lt;i&lt;&lt;&#34; : &#34;;
+                    cin&gt;&gt;a[i];
+                }
+          
+                for (int i = 0; i &lt; n; i++)
+                {
+                    for (int j = (i+1); j &lt; n; j++)
+                    {
+                        if (a[i]==a[j])
+                        {
+                            cout&lt;&lt;&#34;The element &#34;&lt;&lt;a[i]&lt;&lt;&#34; is repeated.\n&#34;;
+                        }
+                        
+                    }
+                    
+                }
+                
+                return 0;
+            }
+              </pre
+          >
+        </div>
+      </div>
   </body>
   
  
@@ -426,6 +474,5 @@ int main()
       border-radius: 0.75rem;
     }
   </style>
-
 
 </html>
