@@ -278,8 +278,125 @@ int main()
         >
       </div>
     </div>
+    <div id="pract3">
+      <h2 class="divider">Practical 3</h2>
+      <div class="code">
+        <h3>Q.1)</h3>
+        <pre>
+  #include&lt;iostream&gt;
+  using namespace std;
+  
+  int main()
+  {
+      for (int i = 1; i &lt; 11; i++)
+      {
+          cout&lt;&lt;&#34;7 x &#34;&lt;&lt;i&lt;&lt;&#34; = &#34;&lt;&lt;7*i&lt;&lt;&#34;\n&#34;;
+      }
+      
+  }
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h3>Q.2)</h3>
+        <pre>
+  #include&lt;iostream&gt;
+  using namespace std;
+  
+  int main()
+  {
+      for (int i = 100; i &gt; 0; i--)
+      {
+          cout&lt;&lt;i&lt;&lt;&#34;\n&#34;;
+      }
+      
+  }
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h3>Q.3)</h3>
+        <pre>
+  #include&lt;iostream&gt;
+  using namespace std;
+
+  int main()
+  {
+      int num=1;
+
+      cout&lt;&lt;&#34;\n&#34;;
+
+      for (int i = 0; i &lt; 5; i++)
+      {
+          for (int j = 0; j &lt;= i; j++, num++)
+          {
+              cout&lt;&lt;num&lt;&lt;&#34; &#34;;
+          }
+          cout&lt;&lt;&#34;\n&#34;;
+      }
+      
+          return 0;
+      }
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h3>Q.4)</h3>
+        <pre>
+  #include&lt;iostream&gt;
+  using namespace std;
+  
+  int main()
+  {
+    int n = 1;
+    cout&lt;&lt;&#34;\n\n&#34;;
+    for(int i = 5; i&gt;0; i--){
+        for(int j = i; j&gt;1; j--){
+            cout&lt;&lt;&#34; &#34;;
+            }
+        for(int k=1; k&lt;=n; k++){
+            cout&lt;&lt;&#34;* &#34;;
+            }
+            cout&lt;&lt;&#34;\n&#34;;
+            n++;
+        }
+        return 0;
+  }
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h3 class="inlineclass">Q.4)</h3><h3 class="pro inlineclass">pro</h3>
+        <pre>
+  #include&lt;iostream&gt;
+  using namespace std;
+  
+  int main()
+  {
+    int n = 1, r;
+    cout&lt;&lt;&#34;Enter the number of rows : &#34;;
+    cin&gt;&gt;r;
+    cout&lt;&lt;&#34;\n\n&#34;;
+    for(int i = r; i&gt;0; i--){
+        for(int j = i; j&gt;1; j--){
+            cout&lt;&lt;&#34; &#34;;
+            }
+        for(int k=1; k&lt;=n; k++){
+            cout&lt;&lt;&#34;* &#34;;
+            }
+            cout&lt;&lt;&#34;\n&#34;;
+            n++;
+        }
+        return 0;
+  }
+            </pre
+        >
+      </div>
+      </div>
   </body>
-  <style>
+  
+ 
+ <style>
     .code{
       border-radius: 2rem;
       margin: 2rem 0.5rem;
@@ -298,5 +415,17 @@ int main()
       margin: 0.5rem;
       padding: 0.5rem;
     }
+    .inlineclass{
+      display: inline;
+    }
+    .pro{
+      background-color: cornflowerblue;
+      color: white;
+      padding: 0.25rem 1rem;
+      margin: 0.25rem 0.5rem;
+      border-radius: 0.75rem;
+    }
   </style>
+
+
 </html>
