@@ -404,43 +404,247 @@ int main()
         <div class="code">
           <h3>Q.2)</h3>
           <pre>
-            #include&lt;iostream&gt;
-            using namespace std;
-            
-            int main()
-            {
-                int n;
+  #include&lt;iostream&gt;
+  using namespace std;
+  
+  int main()
+  {
+      int n;
+
+      cout&lt;&lt;&#34;Enter the size of array : &#34;;
+      cin&gt;&gt;n;
+
+      int a[n];
+
+      for (int i = 0; i &lt; n; i++)
+      {
+          cout&lt;&lt;&#34;Enter the element at index &#34;&lt;&lt;i&lt;&lt;&#34; : &#34;;
+          cin&gt;&gt;a[i];
+      }
+
+      for (int i = 0; i &lt; n; i++)
+      {
+          for (int j = (i+1); j &lt; n; j++)
+          {
+              if (a[i]==a[j])
+              {
+                  cout&lt;&lt;&#34;The element &#34;&lt;&lt;a[i]&lt;&lt;&#34; is repeated.\n&#34;;
+              }
+              
+          }
           
-                cout&lt;&lt;&#34;Enter the size of array : &#34;;
-                cin&gt;&gt;n;
+      }
+      
+      return 0;
+  }
+              </pre
+          >
+        </div>
+        <div class="code">
+          <h3 class="inlineclass">Q.2)</h3><h3 class="pro inlineclass">pro</h3>
+          <pre>
+  #include&lt;iostream&gt;
+  using namespace std;
+  
+  int main()
+  {
+      int n;
+  
+      cout&lt;&lt;&#34;Enter the size of array : &#34;;
+      cin&gt;&gt;n;
+  
+      int a[n];
+  
+      for (int i = 0; i &lt; n; i++)
+      {
+          cout&lt;&lt;&#34;Enter the element at index &#34;&lt;&lt;i&lt;&lt;&#34; : &#34;;
+          cin&gt;&gt;a[i];
+      }
+  
+      for (int i = 0; i &lt; n; i++)
+      {
+          if (a[i]==-1)
+          {
+              continue;
+          }
+          for (int j = (i+1); j &lt; n; j++)
+          {
+              // cout&lt;&lt;&#34;\n i = &#34;&lt;&lt;i&lt;&lt;&#34; j = &#34;&lt;&lt;j&lt;&lt;&#34;\n&#34;;
+              if (a[j]==-1)
+              {
+                  continue;
+              }
+              
+              if (a[i]==a[j])
+              {
+                  cout&lt;&lt;&#34;The element &#34;&lt;&lt;a[i]&lt;&lt;&#34; is repeated.\n&#34;;
+                  for(int k = j; k&lt;n; k++){
+                      if (a[k]==a[i])
+                      {
+                          a[k]=-1;
+                      }
+                      
+                  }
+              }
+              
+          }
           
-                int a[n];
+      }
+      
+      return 0;
+  }
+              </pre
+          >
+        </div>
+        <div class="code">
+          <h3>Q.3)</h3>
+          <pre>
+  #include&lt;iostream&gt;
+  using namespace std;
+  
+  int main()
+  {
+      int n;
+  
+      cout&lt;&lt;&#34;Enter the size of array : &#34;;
+      cin&gt;&gt;n;
+  
+      int a[n];
+  
+      for (int i = 0; i &lt; n; i++)
+      {
+          cout&lt;&lt;&#34;Enter the element at index &#34;&lt;&lt;i&lt;&lt;&#34; : &#34;;
+          cin&gt;&gt;a[i];
+      }
+      
+      int small=a[0], small2;
+  
+      for (int i = 0; i &lt; n; i++)
+      {
+          if (a[i]&lt;small)
+          {
+            small2 = small;
+            small = a[i];
+          }
+      }
+
+      cout&lt;&lt;&#34;The smallest number is &#34;&lt;&lt;small&lt;&lt;&#34; second smallest number is &#34;&lt;&lt;small2&lt;&lt;&#34;.\n&#34;;
+      
+      return 0;
+  }
+        
+              </pre
+          >
+        </div>
+        <div class="code">
+          <h3>Q.4)</h3>
+          <pre>
+  #include&lt;iostream&gt;
+  using namespace std;
+  
+  int main()
+  {
+      int n;
+  
+      cout&lt;&lt;&#34;Enter the size of array : &#34;;
+      cin&gt;&gt;n;
+  
+      int a[n];
+  
+      for (int i = 0; i &lt; n; i++)
+      {
+          cout&lt;&lt;&#34;Enter the element at index &#34;&lt;&lt;i&lt;&lt;&#34; : &#34;;
+          cin&gt;&gt;a[i];
+      }
+
+      int temp = a[0];
+
+      for (int i = 0; i &lt; n; i++)
+      {
+          if (a[i]!=temp)
+          {
+              cout&lt;&lt;&#34;The element &#34;&lt;&lt;temp&lt;&lt;&#34; is missing!\n&#34;;
+              i--;
+          }
           
-                for (int i = 0; i &lt; n; i++)
-                {
-                    cout&lt;&lt;&#34;Enter the element at index &#34;&lt;&lt;i&lt;&lt;&#34; : &#34;;
-                    cin&gt;&gt;a[i];
-                }
-          
-                for (int i = 0; i &lt; n; i++)
-                {
-                    for (int j = (i+1); j &lt; n; j++)
-                    {
-                        if (a[i]==a[j])
-                        {
-                            cout&lt;&lt;&#34;The element &#34;&lt;&lt;a[i]&lt;&lt;&#34; is repeated.\n&#34;;
-                        }
-                        
-                    }
-                    
-                }
-                
-                return 0;
-            }
+          temp++;
+      }
+      
+      
+      return 0;
+  }
               </pre
           >
         </div>
       </div>
+      <div id="pract5">
+        <h2 class="divider">Practical 5</h2>
+        <div class="code">
+          <h3>Q.1)</h3>
+          <pre>
+  #include&lt;iostream&gt;
+  using namespace std;
+  
+  int main()
+  {
+      int m, n, c, temp=0;
+  
+      cout&lt;&lt;&#34;Enter the number of rows in first matrix : &#34;;
+      cin&gt;&gt;m;
+      cout&lt;&lt;&#34;Enter the number of column in first matrix or the number of row in second matrix : &#34;;
+      cin&gt;&gt;n;
+      cout&lt;&lt;&#34;Enter the number of column in second matrix : &#34;;
+      cin&gt;&gt;c;
+  
+      int a[m][n], b[n][c], ab[m][c];
+  
+      cout&lt;&lt;&#34;Enter the first matrix : \n\n&#34;;
+      for (int i = 0; i &lt; m; i++)
+      {
+          for (int j = 0; j &lt; n; j++)
+          {
+          cout&lt;&lt;&#34;Enter the element at index &#34;&lt;&lt;i&lt;&lt;&#34;, &#34;&lt;&lt;j&lt;&lt;&#34; : &#34;;
+          cin&gt;&gt;a[i][j];
+          }
+      }
+
+      cout&lt;&lt;&#34;\n\nEnter the second matrix : \n\n&#34;;
+      for (int i = 0; i &lt; n; i++)
+      {
+          for (int j = 0; j &lt; c; j++)
+          {
+          cout&lt;&lt;&#34;Enter the element at index &#34;&lt;&lt;i&lt;&lt;&#34;, &#34;&lt;&lt;j&lt;&lt;&#34; : &#34;;
+          cin&gt;&gt;b[i][j];
+          }
+      }
+
+      for (int i = 0; i &lt; m; i++)
+      {
+          for (int j = 0; j &lt; c; j++)
+          {
+              for (int k = 0; k &lt; n; k++)
+              {
+                  temp=temp+(a[i][k]*b[k][j]);
+              }
+              ab[i][j]=temp;
+              temp=0;
+          }
+      }
+      for (int i = 0; i &lt; m; i++)
+      {
+          for (int j = 0; j &lt; c; j++)
+          {
+              cout&lt;&lt;ab[i][j]&lt;&lt;&#34;\t&#34;;
+          }
+          cout&lt;&lt;&#34;\n&#34;;
+      }
+      
+
+      return 0;
+  }
+              </pre
+          >
+        </div>
   </body>
   
  
