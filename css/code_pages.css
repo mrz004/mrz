@@ -9,12 +9,14 @@
   }
   .code pre{
     margin-left: 5rem;
+    font-size: 1rem;
   }
   .divider{
     background-color: rgb(110, 110, 110);
     border-radius: 1rem;
     margin: 0.5rem;
     padding: 0.5rem;
+    font-size: 1.7rem;
   }
   .inlineclass{
     display: inline;
