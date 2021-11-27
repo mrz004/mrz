@@ -1,0 +1,28 @@
+.code{
+    border-radius: 2rem;
+    margin: 2rem 0.5rem;
+    padding: 0.5rem;
+    color: #ffff95;
+    background-color: rgb(55, 55, 85);
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .code pre{
+    margin-left: 5rem;
+  }
+  .divider{
+    background-color: rgb(110, 110, 110);
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  .inlineclass{
+    display: inline;
+  }
+  .pro{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 0.25rem 1rem;
+    margin: 0.25rem 0.5rem;
+    border-radius: 0.75rem;
+  }
