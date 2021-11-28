@@ -12,7 +12,7 @@
         <h1 class="mid">OBJECT ORIENTED PROGRAMMING USING C++</h1>
         <h1 class="mid">MICRO-PROJECT</h1>
       </header>
-      <div id="pract1">
+      <div id="onlineGDP">
         <h2 class="divider mid">Topic : Contact manegment system.</h2>
         <div class="code">
           <pre>
@@ -22,12 +22,17 @@
 using namespace std;
 
 void saveCont(){
-    string name, num;
+    string name, num="";
 
     cout&lt;&lt;&#34;\nEnter the name : &#34;;
     cin&gt;&gt;name;
-    cout&lt;&lt;&#34;Enter the number : &#34;;
-    cin&gt;&gt;num;
+    while(num.length()!=10){
+            cout&lt;&lt;&#34;Enter the number : &#34;;
+            cin&gt;&gt;num;
+            if(num.length()!=10){
+                cout&lt;&lt;&#34;\n10 digit are mandatory!\ntry again\n\n&#34;;
+            }
+        }
 
     ofstream dataApp(&#34;data&#34;, fstream::app);
 
@@ -167,6 +172,177 @@ int main()
         system(&#34;CLS&#34;);
     }
     
+    return 0;
+}
+
+
+// {Author : Zahoorahmed S. Sayyad.}
+              </pre
+          >
+        </div>
+      </div>
+      <div id="turboC">
+        <h2 class="divider mid">Topic : Contact manegment system.</h2>
+        <div class="code">
+            <h2 class="pro inlineclass">Turbo C/C++</h2>
+          <pre>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;fstream&gt;
+#include&lt;stdlib.h&gt;
+
+void saveCont(){
+    string name, num="";
+
+    cout&lt;&lt;&#34;\nEnter the name : &#34;;
+    cin&gt;&gt;name;
+    while(num.length()!=10){
+            cout&lt;&lt;&#34;Enter the number : &#34;;
+            cin&gt;&gt;num;
+            if(num.length()!=10){
+                cout&lt;&lt;&#34;\n10 digit are mandatory!\ntry again\n\n&#34;;
+            }
+        }
+
+    ofstream dataApp(&#34;data&#34;, fstream::app);
+
+    dataApp&lt;&lt;&#34;\n&#34;&lt;&lt;name&lt;&lt;&#34; :\t\t\t\t&#34;&lt;&lt;num;
+
+    dataApp.close();
+}
+
+void searchCont(){
+
+    string con, s;
+
+    cout&lt;&lt;&#34;\nEnter string:&#34;;
+    cin&gt;&gt;s;
+
+    // opened file in in mode
+    ifstream data(&#34;data&#34;);
+
+    // running while loop whith eof() which will return 0 if end of file is not reached
+    while (data.eof()==0)
+    {
+        // gets next line evry time
+        getline(data,con);
+
+        // declaring a bool variable to check matching variables
+        bool match;
+        for (int i = 0; i &lt; con.size(); i++)
+        {
+            // resetting value of match to false for every charector
+            match = false;
+
+            if(con[i]==s[0]){
+                for (int j = 0; j &lt; s.size(); j++)
+                {
+                    if(con[i+j]==s[j]){
+                        match = true;
+                    }
+                    else
+                    {
+                        match=false;
+                        break;
+                    }
+                }
+            }
+            // printing the extracted line if the search string is found
+            if(match==true){
+                cout&lt;&lt;con&lt;&lt;&#34;\n&#34;;
+            }
+        }
+    }
+
+    data.close();
+}
+
+void allCont(){
+    string con;
+    int i;
+
+    cout&lt;&lt;&#34;\n&#34;;
+
+    ifstream dataIn(&#34;data&#34;);
+
+    while (dataIn.eof()==0)
+    {
+        getline(dataIn,con);
+
+        cout&lt;&lt;con&lt;&lt;&#34;\n&#34;;
+    }
+
+    dataIn.close();
+}
+
+void reset(){
+    // open in out mode which will auto matically empty the file
+    ofstream dataOut(&#34;data&#34;);
+
+    dataOut&lt;&lt;&#34;NAME:\t\t\t\t\tNUMBER&#34;;
+    
+    dataOut.close();
+}
+
+int main()
+{
+    // initial screen clear
+    clrscr();
+
+    char option;
+
+    // creating the file if it is not present
+    ifstream data(&#34;data&#34;);
+    if(!data){
+        fstream data(&#34;data&#34;, fstream::app);
+        data.close();
+        reset();
+    }
+    data.close();
+
+    // starting a infinight while loop
+    while (1)
+    {
+        // accepting users choice to call function
+        cout&lt;&lt;&#34;CONTACTS\n\n\nSelect the option : \n\n\t1}Save a new contact.\n\t2}Search for a contact.\n\t3}See all contacts.\n\t4}Reset and delete all contacts.\n\t5}Exit.\n\n&#34;;
+        cin&gt;&gt;option;
+        
+        // calling functions according to users choice
+        switch (option)
+        {
+        case '1':
+            saveCont();
+            break;
+        
+        case '2':
+            searchCont();
+            break;
+        
+        case '3':
+            allCont();
+            break;
+        
+        case '4':
+            reset();
+            break;
+        
+        case '5':
+            exit(0);
+            break;
+        
+        default:
+            allCont();
+            break;
+        }
+
+        // waiting for user and then clear the screen
+        cout&lt;&lt;&#34;\nPress enter to clear.&#34;;
+        getchar();
+        getchar();
+        clrscr();
+    }
+    
+    getch();
     return 0;
 }
 
