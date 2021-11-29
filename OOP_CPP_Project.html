@@ -21,27 +21,37 @@
 #include&lt;cstdlib&gt;
 using namespace std;
 
-void saveCont(){
-    string name, num="";
+class contacts
+{
+public:
+string name, num=&#34;&#34;;
+void saveCont();
+void searchCont();
+void allCont();
+void reset();
+};
 
+contacts book;
+
+void contacts::saveCont(){
     cout&lt;&lt;&#34;\nEnter the name : &#34;;
-    cin&gt;&gt;name;
-    while(num.length()!=10){
+    cin&gt;&gt;book.name;
+    while(book.num.size()!=10){
             cout&lt;&lt;&#34;Enter the number : &#34;;
-            cin&gt;&gt;num;
-            if(num.length()!=10){
+            cin&gt;&gt;book.num;
+            if(book.num.size()!=10){
                 cout&lt;&lt;&#34;\n10 digit are mandatory!\ntry again\n\n&#34;;
             }
         }
 
     ofstream dataApp(&#34;data&#34;, fstream::app);
 
-    dataApp&lt;&lt;&#34;\n&#34;&lt;&lt;name&lt;&lt;&#34; :\t\t\t\t&#34;&lt;&lt;num;
+    dataApp&lt;&lt;&#34;\n&#34;&lt;&lt;book.name&lt;&lt;&#34; :\t\t\t\t&#34;&lt;&lt;book.num;
 
     dataApp.close();
 }
 
-void searchCont(){
+void contacts::searchCont(){
 
     string con, s;
 
@@ -87,7 +97,7 @@ void searchCont(){
     data.close();
 }
 
-void allCont(){
+void contacts::allCont(){
     string con;
     int i;
 
@@ -105,7 +115,7 @@ void allCont(){
     dataIn.close();
 }
 
-void reset(){
+void contacts::reset(){
     // open in out mode which will auto matically empty the file
     ofstream dataOut(&#34;data&#34;);
 
@@ -114,8 +124,7 @@ void reset(){
     dataOut.close();
 }
 
-int main()
-{
+int main(){
     // initial screen clear
     system(&#34;CLS&#34;);
 
@@ -126,7 +135,7 @@ int main()
     if(!data){
         fstream data(&#34;data&#34;, fstream::app);
         data.close();
-        reset();
+        book.reset();
     }
     data.close();
 
@@ -141,19 +150,19 @@ int main()
         switch (option)
         {
         case '1':
-            saveCont();
+            book.saveCont();
             break;
         
         case '2':
-            searchCont();
+            book.searchCont();
             break;
         
         case '3':
-            allCont();
+            book.allCont();
             break;
         
         case '4':
-            reset();
+            book.reset();
             break;
         
         case '5':
@@ -161,7 +170,7 @@ int main()
             break;
         
         default:
-            allCont();
+            book.allCont();
             break;
         }
 
@@ -189,20 +198,15 @@ int main()
 #include&lt;iostream.h&gt;
 #include&lt;conio.h&gt;
 #include&lt;fstream&gt;
-#include&lt;stdlib.h&gt;
+#include&lt;cstdlib&gt;
 
 void saveCont(){
-    string name, num="";
+    string name, num;
 
     cout&lt;&lt;&#34;\nEnter the name : &#34;;
     cin&gt;&gt;name;
-    while(num.length()!=10){
-            cout&lt;&lt;&#34;Enter the number : &#34;;
-            cin&gt;&gt;num;
-            if(num.length()!=10){
-                cout&lt;&lt;&#34;\n10 digit are mandatory!\ntry again\n\n&#34;;
-            }
-        }
+    cout&lt;&lt;&#34;Enter the number : &#34;;
+    cin&gt;&gt;num;
 
     ofstream dataApp(&#34;data&#34;, fstream::app);
 
@@ -304,7 +308,7 @@ int main()
     while (1)
     {
         // accepting users choice to call function
-        cout&lt;&lt;&#34;CONTACTS\n\n\nSelect the option : \n\n\t1}Save a new contact.\n\t2}Search for a contact.\n\t3}See all contacts.\n\t4}Reset and delete all contacts.\n\t5}Exit.\n\n&#34;;
+        cout&lt;&lt;&#34;\n\nSelect the option : \n\n\t1}Save a new contact.\n\t2}Search for a contact.\n\t3}See all contacts.\n\t4}Reset and delete all contacts.\n\t5}Exit.\n\n&#34;;
         cin&gt;&gt;option;
         
         // calling functions according to users choice
