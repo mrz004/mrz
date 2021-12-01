@@ -13,7 +13,7 @@
         <h1 class="mid">MICRO-PROJECT</h1>
       </header>
       <div id="onlineGDP">
-        <h2 class="divider mid">Topic : Contact manegment system.</h2>
+        <h2 class="divider mid">Topic : PhoneBook Manegment System.</h2>
         <div class="code">
           <pre>
 #include&lt;iostream&gt;
@@ -24,7 +24,7 @@ using namespace std;
 class contacts
 {
 public:
-string name, num=&#34;&#34;;
+string name, num;
 void saveCont();
 void searchCont();
 void allCont();
@@ -34,19 +34,21 @@ void reset();
 contacts book;
 
 void contacts::saveCont(){
-    cout&lt;&lt;&#34;\nEnter the name : &#34;;
-    cin&gt;&gt;book.name;
+    cout&lt;&lt;&34;\nEnter the name : &34;;
+    getchar();
+    getline(cin, book.name);
+    book.num=&34;&34;;
     while(book.num.size()!=10){
-            cout&lt;&lt;&#34;Enter the number : &#34;;
+            cout&lt;&lt;&34;Enter the number : &34;;
             cin&gt;&gt;book.num;
             if(book.num.size()!=10){
-                cout&lt;&lt;&#34;\n10 digit are mandatory!\ntry again\n\n&#34;;
+                cout&lt;&lt;&34;\n10 digit are mandatory!\ntry again\n\n&34;;
             }
         }
 
-    ofstream dataApp(&#34;data&#34;, fstream::app);
+    ofstream dataApp(&34;data&34;, fstream::app);
 
-    dataApp&lt;&lt;&#34;\n&#34;&lt;&lt;book.name&lt;&lt;&#34; :\t\t\t\t&#34;&lt;&lt;book.num;
+    dataApp&lt;&lt;&34;\n&34;&lt;&lt;book.name&lt;&lt;&34; : &34;&lt;&lt;book.num;
 
     dataApp.close();
 }
@@ -55,11 +57,11 @@ void contacts::searchCont(){
 
     string con, s;
 
-    cout&lt;&lt;&#34;\nEnter string:&#34;;
+    cout&lt;&lt;&34;\nEnter string:&34;;
     cin&gt;&gt;s;
 
     // opened file in in mode
-    ifstream data(&#34;data&#34;);
+    ifstream data(&34;data&34;);
 
     // running while loop whith eof() which will return 0 if end of file is not reached
     while (data.eof()==0)
@@ -89,7 +91,7 @@ void contacts::searchCont(){
             }
             // printing the extracted line if the search string is found
             if(match==true){
-                cout&lt;&lt;con&lt;&lt;&#34;\n&#34;;
+                cout&lt;&lt;con&lt;&lt;&34;\n&34;;
             }
         }
     }
@@ -101,15 +103,15 @@ void contacts::allCont(){
     string con;
     int i;
 
-    cout&lt;&lt;&#34;\n&#34;;
+    cout&lt;&lt;&34;\n&34;;
 
-    ifstream dataIn(&#34;data&#34;);
+    ifstream dataIn(&34;data&34;);
 
     while (dataIn.eof()==0)
     {
         getline(dataIn,con);
 
-        cout&lt;&lt;con&lt;&lt;&#34;\n&#34;;
+        cout&lt;&lt;con&lt;&lt;&34;\n\n&34;;
     }
 
     dataIn.close();
@@ -117,23 +119,23 @@ void contacts::allCont(){
 
 void contacts::reset(){
     // open in out mode which will auto matically empty the file
-    ofstream dataOut(&#34;data&#34;);
+    ofstream dataOut(&34;data&34;);
 
-    dataOut&lt;&lt;&#34;NAME:\t\t\t\t\tNUMBER&#34;;
+    dataOut&lt;&lt;&34;NAME : NUMBER&34;;
     
     dataOut.close();
 }
 
 int main(){
     // initial screen clear
-    system(&#34;CLS&#34;);
+    system(&34;CLS&34;);
 
     char option;
 
     // creating the file if it is not present
-    ifstream data(&#34;data&#34;);
+    ifstream data(&34;data&34;);
     if(!data){
-        fstream data(&#34;data&#34;, fstream::app);
+        fstream data(&34;data&34;, fstream::app);
         data.close();
         book.reset();
     }
@@ -143,7 +145,7 @@ int main(){
     while (1)
     {
         // accepting users choice to call function
-        cout&lt;&lt;&#34;CONTACTS\n\n\nSelect the option : \n\n\t1}Save a new contact.\n\t2}Search for a contact.\n\t3}See all contacts.\n\t4}Reset and delete all contacts.\n\t5}Exit.\n\n&#34;;
+        cout&lt;&lt;&34;\n PHONEBOOK\n\n\n Select the option : \n\n\t1}Save a new contact.\n\t2}Search for a contact.\n\t3}See all contacts.\n\t4}Reset and delete all contacts.\n\t5}Exit.\n\n&34;;
         cin&gt;&gt;option;
         
         // calling functions according to users choice
@@ -175,10 +177,10 @@ int main(){
         }
 
         // waiting for user and then clear the screen
-        cout&lt;&lt;&#34;\nPress enter to clear.&#34;;
+        cout&lt;&lt;&34;\nPress enter to clear.&34;;
         getchar();
         getchar();
-        system(&#34;CLS&#34;);
+        system(&34;CLS&34;);
     }
     
     return 0;
@@ -191,7 +193,7 @@ int main(){
         </div>
       </div>
       <div id="turboC">
-        <h2 class="divider mid">Topic : Contact manegment system.</h2>
+        <h2 class="divider mid">Topic : PhoneBook Manegment System.</h2>
         <div class="code">
             <h2 class="pro inlineclass">Turbo C/C++</h2>
           <pre>
