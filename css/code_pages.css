@@ -1,3 +1,7 @@
+html{
+  font-family: 'Source Code Pro', monospace;
+}
+
 .code{
     border-radius: 2rem;
     margin: 2rem 0.5rem;
