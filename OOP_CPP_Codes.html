@@ -647,6 +647,119 @@ int main()
               </pre
           >
         </div>
+        <div class="code">
+          <h3>Q.2)</h3>
+          <pre>
+#include&lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    int a[2][2];
+
+    cout&lt;&lt;&#34;Input the metrix : &#34;;
+    for (int  i = 0; i &lt; 2; i++)
+    {
+        for (int j = 0; j &lt; 2; j++)
+        {
+            cout&lt;&lt;&#34;\nEnter the element at index &#34;&lt;&lt;i&lt;&lt;&#34;, &#34;&lt;&lt;j&lt;&lt;&#34; : &#34;;
+            cin&gt;&gt;a[i][j];
+        }
+    }
+    cout&lt;&lt;&#34;The array after Transpose : \n&#34;;
+    for (int  i = 0; i &lt; 2; i++)
+    {
+        for (int j = 0; j &lt; 2; j++)
+        {
+            cout&lt;&lt;a[j][i]&lt;&lt;&#34;\t&#34;;
+        }
+        cout&lt;&lt;&#34;\n\n&#34;;
+    }
+    
+    
+    return 0;
+}
+              </pre
+          >
+        </div>
+      </div>
+      <div id="pract6">
+        <h2 class="divider">Practical 6</h2>
+        <div class="code">
+          <h3>Q.1)</h3>
+          <pre>
+#include&lt;iostream&gt;
+using namespace std;
+
+class book{
+    public:
+    string book_name, author;
+    unsigned int price;
+    book(){
+        cout&lt;&lt;&#34;Enter the name of the book : &#34;;
+        cin&gt;&gt;book_name;
+        cout&lt;&lt;&#34;Enter the author of the book : &#34;;
+        cin&gt;&gt;author;
+        cout&lt;&lt;&#34;Enter the price of the book : &#34;;
+        cin&gt;&gt;price;
+    }
+    void display(){
+        cout&lt;&lt;&#34;Book name : &#34;&lt;&lt;book_name&lt;&lt;&#34;\nBook author : &#34;&lt;&lt;author&lt;&lt;&#34;\nPrice of book : &#34;&lt;&lt;price&lt;&lt;&#34;\n&#34;;
+    }
+};
+
+int main()
+{
+    book b1, b2;
+    if (b1.price&gt;b2.price)
+    {
+        b1.display();
+    }
+    else
+    {
+        b2.display();
+    }
+    
+    return 0;
+}
+              </pre
+          >
+        </div>
+        <div class="code">
+          <h3>Q.2)</h3>
+          <pre>
+#include&lt;iostream&gt;
+using namespace std;
+
+class staff
+{  
+public:
+    string name;
+    float basicSalary, DA, HRA;
+    staff(){
+        cout&lt;&lt;&#34;Enter the name of staff menber : &#34;;
+        getline(cin, name);
+        cout&lt;&lt;&#34;Enter the Basic Salary of staff menber : &#34;;
+        cin&gt;&gt;basicSalary;
+    }
+    void gross(){
+        DA = (basicSalary*0.745);
+        HRA = (basicSalary*0.3);
+        basicSalary = (basicSalary + DA + HRA);
+        cout&lt;&lt;&#34;\nName : &#34;&lt;&lt;name&lt;&lt;&#34;\nGross salary : &#34;&lt;&lt;basicSalary&lt;&lt;&#34;\n&#34;;
+    }
+};
+
+int main()
+{
+    staff s;
+    s.gross();
+
+    return 0;
+}
+              </pre
+          >
+        </div>
       </div>
   </body>
 </html>
