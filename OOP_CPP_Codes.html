@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mrz | Codes | OOP Codes</title>
     <link rel="stylesheet" href="css/code_pages.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=M+PLUS+1+Code:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -754,6 +754,301 @@ int main()
 {
     staff s;
     s.gross();
+
+    return 0;
+}
+              </pre
+          >
+        </div>
+      </div>
+      <div id="pract7">
+        <h2 class="divider">Practical 7</h2>
+        <div class="code">
+          <h3>Q.1)</h3>
+          <pre>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+class Employee
+{
+private:
+    char emp_name[20];
+    unsigned short int emp_id;
+    unsigned long int salary;
+public:
+    Employee(){
+        cout&lt;&lt;&#34;Enter the name of employee : &#34;;
+        cin&gt;&gt;emp_name;
+        cout&lt;&lt;&#34;Enter the id of employee : &#34;;
+        cin&gt;&gt;emp_id;
+        cout&lt;&lt;&#34;Enter the salary of employee : &#34;;
+        cin&gt;&gt;salary;
+    }
+void display(){
+    if (salary&gt;25000)
+    {
+    cout&lt;&lt;&#34;\n\nName : &#34;&lt;&lt;emp_name&lt;&lt;&#34;\nEmp_id : &#34;&lt;&lt;emp_id&lt;&lt;&#34;\nSalary : &#34;&lt;&lt;salary&lt;&lt;&#34;\n\n&#34;;
+    }   
+}
+};
+
+int main(){
+    clrscr();
+    Employee e[5];
+    for (int i = 0; i &lt; 5; i++)
+    {
+        e[i].display();
+    }
+    getch();
+    return 0;   
+}
+              </pre
+          >
+        </div>
+        <div class="code">
+          <h3>Q.2)</h3>
+          <pre>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+class City
+{
+private:
+    char name[20];
+    unsigned long int population;
+public:
+    void get(){
+    cout&lt;&lt;&#34;Enter the name City : &#34;;
+    cin&gt;&gt;name;
+    cout&lt;&lt;&#34;Enter the population of City : &#34;;
+    cin&gt;&gt;population;
+    }
+void display(){
+    cout&lt;&lt;&#34;\n\nName : &#34;&lt;&lt;name&lt;&lt;&#34;\nPopulation : &#34;&lt;&lt;population&lt;&lt;&#34;\n\n&#34;;
+}
+};
+
+int main(){
+    clrscr();
+    City c[10];
+    for (int i = 0; i &lt; 10; i++)
+    {
+    c[i].get();
+    }
+    for (i = 0; i &lt; 10; i++)
+    {
+    c[i].display();
+    }
+    getch();
+    return 0;
+}
+              </pre
+          >
+        </div>
+      </div>
+      <div id="pract8">
+        <h2 class="divider">Practical 8</h2>
+        <div class="code">
+          <h3>Q.1)</h3>
+          <pre>
+#include&lt;iostream&gt;
+using namespace std;
+
+class number{
+    public:
+    int a;
+    number(){
+        cout&lt;&lt;&#34;\nEnter the value of a : &#34;;
+        cin&gt;&gt;a;
+    }
+    friend void swap(number &, number &);
+};
+
+void swap(number &x, number &y){
+    int temp = x.a;
+    x.a = y.a;
+    y.a = temp;
+}
+
+int main()
+{
+    number n1, n2;
+
+    cout&lt;&lt;&#34;\nThe value of n1.a = &#34;&lt;&lt;n1.a&lt;&lt;&#34; and n2.a = &#34;&lt;&lt;n2.a&lt;&lt;&#34;\n&#34;;
+    swap(n1, n2);
+    cout&lt;&lt;&#34;\nThe value of n1.a = &#34;&lt;&lt;n1.a&lt;&lt;&#34; and n2.a = &#34;&lt;&lt;n2.a&lt;&lt;&#34;\n&#34;;
+
+    return 0;
+}
+              </pre
+          >
+        </div>
+        <div class="code">
+          <h3>Q.2)</h3>
+          <pre>
+#include&lt;iostream&gt;
+using namespace std;
+
+class Distance{
+    unsigned int meter;
+    public:
+    Distance(){
+        cout&lt;&lt;&#34;\nEnter a value in meter : &#34;;
+        cin&gt;&gt;meter;
+    }
+    friend void add(Distance &, Distance &);
+};
+
+void add(Distance &x, Distance &y){
+    cout&lt;&lt;&#34;\nAddition of the two distances = &#34;&lt;&lt;(x.meter + y.meter)&lt;&lt;&#34;\n&#34;;
+}
+
+int main()
+{
+    Distance d1, d2;
+
+    add(d1, d2);
+
+    return 0;
+}
+              </pre
+          >
+        </div>
+      </div>
+      <div id="pract9">
+        <h2 class="divider">Practical 9</h2>
+        <div class="code">
+          <h3>Q.1)</h3>
+          <pre>
+#include&lt;iostream&gt;
+using namespace std;
+
+class number{
+    public:
+    int x, y;
+    inline int add(int a, int b){
+        return (a+b);
+    }
+    inline int sub(int a, int b){
+        return (a-b);
+    }
+    inline int mul(int a, int b){
+        return (a*b);
+    }
+    inline int div(int a, int b){
+        return (a/b);
+    }
+};
+
+int main()
+{
+    number n;
+    cout&lt;&lt;&#34;\nEnter the values of x and y : &#34;;
+    cin&gt;&gt;n.x&gt;&gt;n.y;
+
+    cout&lt;&lt;&#34;\nAddition of x and y = &#34;&lt;&lt;n.add(n.x, n.y);
+    cout&lt;&lt;&#34;\nDifference of x and y = &#34;&lt;&lt;n.sub(n.x, n.y);
+    cout&lt;&lt;&#34;\nProduct of x and y = &#34;&lt;&lt;n.mul(n.x, n.y);
+    cout&lt;&lt;&#34;\nDivition of x and y = &#34;&lt;&lt;n.div(n.x, n.y);
+
+    return 0;
+}
+              </pre
+          >
+        </div>
+      </div>
+      <div id="pract10">
+        <h2 class="divider">Practical 10</h2>
+        <div class="code">
+          <h3>Q.1)</h3>
+          <pre>
+#include&lt;iostream&gt;
+using namespace std;
+
+class number{
+    int x, y;
+    public:
+    number(){
+        cout&lt;&lt;&#34;\nEnter the value of x : &#34;;
+        cin&gt;&gt;x;
+        cout&lt;&lt;&#34;\nEnter the value of y : &#34;;
+        cin&gt;&gt;y;
+    }
+    ~number(){
+        cout&lt;&lt;&#34;\nAddition of x and y = &#34;&lt;&lt; (x+y);
+        cout&lt;&lt;&#34;\nSubstraction of x and y = &#34;&lt;&lt; (x-y);
+        cout&lt;&lt;&#34;\nProduct of x and y = &#34;&lt;&lt; (x*y);
+        cout&lt;&lt;&#34;\nDivition of x and y = &#34;&lt;&lt; (x/y);
+    }
+};
+
+int main()
+{
+    number n;
+    return 0;
+}
+              </pre
+          >
+        </div>
+        <div class="code">
+          <h3>Q.2)</h3>
+          <pre>
+#include&lt;iostream&gt;
+using namespace std;
+
+class product
+{
+public:
+    int id, price;
+    string name;
+
+    product(){
+        cout&lt;&lt;&#34;\nEnter the name of product : &#34;;
+        cin&gt;&gt;name;
+        cout&lt;&lt;&#34;\nEnter the id of product : &#34;;
+        cin&gt;&gt;id;
+        cout&lt;&lt;&#34;\nEnter the price of product : &#34;;
+        cin&gt;&gt;price;
+    }
+
+    product(int a, string b, int c){
+        id = a;
+        name = b;
+        price = c;
+    }
+    
+    product(product &a){
+        id = a.id;
+        name = a.name;
+        price = a.price;        
+    }
+
+    void display(){
+        cout&lt;&lt;&#34;\nProduct ID : &#34;&lt;&lt;id&lt;&lt;&#34;\nProduct name : &#34;&lt;&lt;name&lt;&lt;&#34;\nProduct price : &#34;&lt;&lt;price;
+    }
+};
+
+int main()
+{
+    int x;
+    int y;
+    string z;
+
+    product p1;
+    product p2 = p1;
+
+    cout&lt;&lt;&#34;\nEnter the name of product : &#34;;
+    cin&gt;&gt;z;
+    cout&lt;&lt;&#34;\nEnter the id of product : &#34;;
+    cin&gt;&gt;x;
+    cout&lt;&lt;&#34;\nEnter the price of product : &#34;;
+    cin&gt;&gt;y;
+
+    product p3(x, z, y);
+
+    p1.display();
+    p2.display();
+    p3.display();
 
     return 0;
 }

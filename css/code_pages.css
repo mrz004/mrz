@@ -1,5 +1,5 @@
 html{
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'M PLUS 1 Code', sans-serif;
 }
 
 .code{
@@ -14,7 +14,7 @@ html{
   .code pre{
     margin-left: 5rem;
     font-size: 1rem;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'M PLUS 1 Code', sans-serif;
   }
   .divider{
     background-color: rgb(110, 110, 110);
