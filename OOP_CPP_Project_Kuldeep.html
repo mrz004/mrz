@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mrz | code | Kuldeep/Rohit OOP project</title>
+    <link rel="stylesheet" href="css/code_pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=M+PLUS+1+Code:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="mid">OBJECT ORIENTED PROGRAMMING USING C++</h1>
+        <h1 class="mid">MICRO-PROJECT</h1>
+      </header>
+        <h2 class="divider mid">Topic : Salary Manegment System.</h2>
+        <div class="code">
+          <pre>
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+using namespace std;
+
+class emp
+{
+private:
+    string name;
+    unsigned short int id;
+    unsigned long int salary;
+
+public:
+    void save();
+    void seeAll();
+    void search();
+    void deleteAll();
+} e;
+
+void emp::save() {
+    cout&lt;&lt;&#34;\nEnter the name of employee : &#34;;
+    getchar();
+    getline(cin, e.name);
+    cout&lt;&lt;&#34;\nEnter the employee ID : &#34;;
+    cin&gt;&gt;e.id;
+    do
+    {
+    cout&lt;&lt;&#34;\nEnter the salary of employee : &#34;;
+    cin&gt;&gt;e.salary;
+    } while (e.salary&gt;4294967295);
+    
+
+    ofstream info(&#34;info.txt&#34;, fstream::app);
+
+    info&lt;&lt;&#34;\n&#34;&lt;&lt;e.id&lt;&lt;&#34;\t&#34;&lt;&lt;e.name&lt;&lt;&#34; : &#34;&lt;&lt;e.salary;
+
+    info.close();
+}
+void emp::seeAll()
+{
+    string con;
+    int i;
+
+    cout&lt;&lt;&#34;\n&#34;;
+
+    ifstream info(&#34;info.txt&#34;);
+
+    while (!info.eof())
+    {
+        getline(info,con);
+
+        cout&lt;&lt;con&lt;&lt;&#34;\n\n&#34;;
+    }
+
+    info.close();
+}
+void emp::search() {}
+
+void emp::deleteAll() {
+    fstream info;
+    info.open(&#34;info.txt&#34;, ios::out);
+    info.close();
+}
+
+int main()
+{
+    fstream info(&#34;info.txt&#34;, ios::app);
+    info.close();
+
+    char choice;
+    emp e;
+
+    while (1)
+    {
+        cout &lt;&lt; &#34;\nR&D Pvt. Ltd.\nSelect :\n\t1)Save new record\n\t2)See all records\n\t3)Search\n\t4)Delete all records\n\t0)Exit\n&#34;;
+        cin &gt;&gt; choice;
+
+        switch (choice)
+        {
+        case '1':
+            e.save();
+            break;
+
+        case '2':
+            e.seeAll();
+            break;
+
+        case '3':
+            e.search();
+            break;
+
+        case '4':
+            e.deleteAll();
+            break;
+
+        case '0':
+            exit(0);
+            break;
+
+        default:
+            e.seeAll();
+            break;
+        }
+    }
+
+    return 0;
+}
+              </pre
+          >
+        </div>
+</body>
+<style>
+    .mid{
+        text-align: center;
+    }
+</style>
+</html>
