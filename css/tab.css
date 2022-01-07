@@ -4,9 +4,19 @@ flex-direction: column;
   overflow: scroll;
 }
 
-.navlist{
-    font-size: 0.7rem;
+.logo{
+  display: none;
 }
+
+.navlist{
+  font-size: 0.7rem;
+}
+
+#webname{
+  text-align: center;
+  margin: 0%;
+}
+
 .footer {
   overflow: scroll;
 }
