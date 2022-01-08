@@ -24,6 +24,11 @@ body {
   list-style: none;
 }
 
+#aro{
+  margin: auto;
+  text-align: center;
+}
+
 .navlist ul a {
   margin: auto 0.25rem;
   text-decoration: none;
@@ -59,7 +64,7 @@ body {
 }
 
 #webname h1 {
-  font-family: 'Bigshot One', cursive;
+  font-family: 'Bigshot One';
   font-size: 4rem;
   margin: 0px auto;
 }

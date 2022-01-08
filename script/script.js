@@ -19,6 +19,7 @@ if (window.innerWidth < 768) {
 }
 
 function ToggleHide() {
+  if (window.innerWidth < 768) {
     let searchbar = document.getElementById("navdiv");
     let aro = document.getElementById("aro");
 
@@ -26,9 +27,10 @@ function ToggleHide() {
       searchbar.style.display = "";
       aro.innerHTML = "ˆ";
     } else {
-        searchbar.style.display = "none";
-        aro.innerHTML = "ˇ";
+      searchbar.style.display = "none";
+      aro.innerHTML = "ˇ";
     }
   }
+}
 
-  // ToggleHide();
+// ToggleHide();
