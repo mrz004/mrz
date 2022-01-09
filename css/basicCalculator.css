@@ -4,6 +4,11 @@
     margin: 3rem;
 }
 
+.num{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 input{
     border: 2px solid rgb(40, 0, 77);
     border-radius: 0.3rem;
@@ -32,4 +37,22 @@ input{
     width: 3rem;
     border: 2px solid rgb(99, 17, 17);
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        /* background-color: red; */
+        font-size: smaller;
+    }
+    .container{
+        margin: 0.1rem;
+    }
+    .num{
+        font-size: 1rem;
+    }
+    .symbols{
+        margin: auto;
+        width: 100vw;
+        height: 20vh;
+    }
 }
