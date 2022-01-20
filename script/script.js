@@ -14,6 +14,15 @@
 //     navigationList.style.display = "none";
 // }
 
+function toggleCodes() {
+  let codes = document.getElementById("sidebar");
+  if (codes.style.left != 0) {
+    codes.style.left = 0;
+  } else {
+    codes.style.left = -25;
+  }
+}
+
 if (window.innerWidth < 768) {
   ToggleHide();
 }

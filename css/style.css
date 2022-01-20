@@ -1,3 +1,8 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   scroll-behavior: smooth;
   margin: 0%;
@@ -101,4 +106,12 @@ h1 {
 
 h1{
   font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+.sidebar{
+  height: 100vh;
+  background-color: #e8e8e8;
+  position: absolute;
+  left: -25%;
+  width: 20vw;
 }
