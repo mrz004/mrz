@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=auto, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mrz</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       media="screen and (max-width: 768px)"
       href="css/tab.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1440px)"
+      href="css/larg.css"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=M+PLUS+1+Code:wght@300&display=swap"
@@ -21,30 +26,17 @@
       <div class="logo">
         <img src="img/logo.jpg" alt="logo" id="logo" />
       </div>
-      <div  id="webname" onclick="ToggleHide()">
+      <div id="webname">
         <h1>mrz</h1>
         <span id="aro"></span>
       </div>
-      <div id="navdiv" class="navlist">
-        <ul id="navbar">
-          <li>
-            <a href="" onclick="location.reload();">Home</a>
-          </li>
-          <li>
-            <a href="https://techiverse7.blogspot.com/" target="blank">Blog</a>
-          </li>
-          <li>
-            <a href="https://github.com/mrz004" target="blank">GitHub</a>
-          </li>
-          <li>
-            <!-- <a href="codes.html" target="blank">Codes</a> -->
-            <a onclick="toggleCodes">Codes</a>
-          </li>
-        </ul>
+      <div class="navlist">
+        <ul id="navbar"></ul>
       </div>
     </nav>
     <section id="discription">
-      <div class="sidebar" id="sidebar">
+      <div id="sidebar">
+        <div id="resNav"></div>
         <h3>My codes</h3>
       </div>
       <div class="para" id="welcome">
@@ -66,20 +58,16 @@
       <div class="para">
         <h1>My online profiles.</h1>
         <h3>This is my GitHub profile :</h3>
-        <p>
-          <a href="https://github.com/mrz004" target="blank">
+          <a href="https://github.com/mrz004" target="_blank">
             <img src="img/github.png" alt="https://github.com/mrz004" />
           </a>
-        </p>
         <h3>This is my Blogger page :</h3>
-        <p>
-          <a href="https://techiverse7.blogspot.com/" target="blank">
+          <a href="https://techiverse7.blogspot.com/" target="_blank">
             <img
               src="img/blogger.png"
               alt="https://techiverse7.blogspot.com/"
             />
           </a>
-        </p>
       </div>
     </section>
     <section class="footer">
