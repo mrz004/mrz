@@ -86,8 +86,9 @@ body {
   width: 65vw;
 }
 
-.para{
+.para {
   text-align: justify;
+  margin: 5vh 1vw;
 }
 
 h1 {
