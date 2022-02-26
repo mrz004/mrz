@@ -1,10 +1,10 @@
 .navigation {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   overflow: scroll;
 }
 
-.logo{
+.logo {
   display: none;
 }
 
@@ -15,10 +15,9 @@ flex-direction: column;
 
 #resNav hr {
   margin: 1rem 0rem;
-
 }
 
-#webname{
+#webname {
   text-align: center;
   margin: 0%;
 }
@@ -32,30 +31,62 @@ flex-direction: column;
     width: 100%;
   } */
 .para img {
-    margin: 1rem auto;
-    width: 65vw;
-  }
-  .navlist ul a {
-    margin: 0%;
-    padding: 0.5rem 0.7rem;
+  margin: 1rem auto;
+  width: 65vw;
+}
+.navlist ul a {
+  margin: 0%;
+  padding: 0.5rem 0.7rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.para {
+  width: auto;
+}
+
+p {
+  font-size: 0.7rem;
+}
+
+#sidebar {
+  width: 100vw;
+}
+
+#resNav {
+  background-color: #bbbbff;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+p{
+  font-size: 2vw;
+}
+
+#webname h1 {
+  font-size: 8.5vw;
+}
+
+@media only screen and (max-width: 426px) {
+  p{
+    font-size: 3vw;
   }
 
-  h1{
-      font-size: 2rem;
+  #webname h1 {
+    font-size: 15vw;
   }
+}
 
-  .para{
-      width: auto;
+@media only screen and (max-width: 321px) {
+  p{
+    font-size: 4vw;
   }
-
- p{
-     font-size: 0.7rem;
-  }
-
-  #sidebar{
-    width: 100vw;
-  }
-
-  #resNav{
-    margin: 0.9rem auto;
-  }
+  
+#webname h1 {
+  font-size: 19vw;
+}
+}
