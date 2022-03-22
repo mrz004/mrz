@@ -1,9 +1,3 @@
-.container{
-    color: rgb(99, 17, 17);
-    font-size: 2rem;
-    margin: 3rem;
-}
-
 .num{
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +23,6 @@ input{
 .opr{
     font-size: xx-large;
     display: flex;
-    /* margin: 1.5rem; */
     justify-content: center;
     align-items: center;
     background-color: antiquewhite;
@@ -51,8 +44,10 @@ input{
         font-size: 1rem;
     }
     .symbols{
-        margin: auto;
-        width: 100vw;
+        display: flex;
+        margin: 2rem 0;
+        width: 90vw;
         height: 20vh;
+        flex-wrap: wrap;
     }
 }

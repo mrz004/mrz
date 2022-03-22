@@ -10,6 +10,7 @@ body {
   background-color: rgba(227 186 253 0.15);
   height: 100vh;
   color: white;
+  overflow-x: hidden;
 }
 
 .navigation {
@@ -56,10 +57,13 @@ body {
   display: flex;
   width: 100vw;
   justify-content: center;
-  position: relative;
-  bottom: 0%;
+  position: fixed;
+  color: white;
+  bottom: 0;
+  left: 0;
   background-color: black;
   padding: 0.3rem 0px;
+  overflow:  hidden;
 }
 
 #webname{
