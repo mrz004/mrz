@@ -33,5 +33,5 @@ def DSUProjectKuldeep():
     return render_template('DSU_Project.html')
 
 
-if(__name__==__main__):
+if __name__ == '__main__':
     app.run(debug=True)
