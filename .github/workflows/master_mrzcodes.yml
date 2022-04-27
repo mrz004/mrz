@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'mrzcodes'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8F991B63583A442AAA2ACECC5CDDEDFA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2B99E3C114FA407DA094E68C0D3E3F86 }}
