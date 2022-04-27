@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mrz | code | Kuldeep/Rohit OOP project</title>
-    <link rel="stylesheet" href="css/code_pages.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=M+PLUS+1+Code:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <h1 class="mid">OBJECT ORIENTED PROGRAMMING USING C++</h1>
-      <h1 class="mid">MICRO-PROJECT</h1>
-    </header>
-    <h2 class="divider mid">Topic : Salary Manegment System.</h2>
-    <div class="code">
-      <pre>
+{% extends 'base.html' %} {% block links %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='code_pages.css') }}"
+/>
+{% endblock %} {% block title %}mrz | code | Kuldeep/Rohit OOP project{%
+endblock %} {% block body %}
+<header>
+  <h1 class="mid">OBJECT ORIENTED PROGRAMMING USING C++</h1>
+  <h1 class="mid">MICRO-PROJECT</h1>
+</header>
+<h2 class="divider mid">Topic : Salary Manegment System.</h2>
+<div class="code">
+  <pre>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 using namespace std;
@@ -164,13 +157,6 @@ int main()
 
     return 0;
 }            
-              </pre
-      >
-    </div>
-  </body>
-  <style>
-    .mid {
-      text-align: center;
-    }
-  </style>
-</html>
+    </pre>
+</div>
+{% endblock %}

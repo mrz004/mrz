@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{%block title %}{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="{{ url_for('static', filename='tab.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1440px)"
+      href="{{ url_for('static', filename='larg.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=M+PLUS+1+Code:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    {% block links %} {% endblock %}
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="logo">
+        <img
+          src="{{ url_for('static', filename='logo.jpg') }}"
+          alt="logo"
+          id="logo"
+        />
+      </div>
+      <div id="webname">
+        <h1>mrz</h1>
+        <span id="aro"></span>
+      </div>
+      <div class="navlist">
+        <ul id="navbar"></ul>
+      </div>
+    </nav>
+    <section id="discription">
+      <div id="sidebar">
+        <div id="resNav"></div>
+        <h2>My codes :</h2>
+        <div class="sideLink">
+          <a href="/basicCalculator">
+            <h3>Basic calculator using HTML/CSS/JavaScript 🔗</h3>
+          </a>
+          <div class="linkDisc">
+            This is a simple calculator made with HTML/CSS/JavaScript, this is
+            my first attempt so this my not be perfect. I hope you like it!
+          </div>
+        </div>
+        <div class="sideLink">
+          <a href="/OOPCPPCodes">
+            <h3>OOP Practical Codes 🔗</h3>
+          </a>
+          <div class="linkDisc">
+            This is are some of the codes which I had written for the diploma
+            3<sup>rd</sup> sem practical, but they are not all, some of the
+            codes are missing!
+          </div>
+        </div>
+        <div class="sideLink">
+          <a href="/OOPCPPProject">
+            <h3>My OOP Project 🔗</h3>
+          </a>
+          <div class="linkDisc">
+            This is my OOP/CPP microproject code which I had written for the
+            diploma 3<sup>rd</sup> sem. here the basic consepts of C++ are used
+            for small and simple project.
+          </div>
+        </div>
+        <div class="sideLink">
+          <a href="/OOPCPPProjectKuldeep">
+            <h3>Kuldeep/Rohit OOP Project 🔗</h3>
+          </a>
+          <div class="linkDisc">
+            This is my OOP/CPP microproject code of one of my friend written for
+            the diploma 3<sup>rd</sup> sem. here the basic consepts of C++ are
+            used for small and simple project.
+          </div>
+        </div>
+      </div>
+      {% block body %} {% endblock %}
+    </section>
+    <footer id="footer">
+      <div>&copy Copyright 'mrz' . All Rights Reserved</div>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    {% block scriptlinks %} {% endblock %}
+  </body>
+</html>
