@@ -1,24 +1,32 @@
-{% extends 'base.html' %}
-{% block links %}
-        <link rel="stylesheet" href="{{ url_for('static', filename='code_pages.css') }}">
-      {% endblock %}
-      {% block title %}mrz | Codes | OOP Codes{% endblock %}
-      {% block body %}
-      <header>
-          <h1>OBJECT ORIENTED PROGRAMMING USING C++</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mrz | Codes | OOP Codes</title>
+    <link rel="stylesheet" href="css/code_pages.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=M+PLUS+1+Code:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>OBJECT ORIENTED PROGRAMMING USING C++</h1>
     </header>
     <div id="pract1">
       <h2 class="divider">Practical 1</h2>
       <div class="code">
         <h3>Q.1)</h3>
         <pre>
-            #include&lt;iostream&gt;
-            #include&lt;cmath&gt;
-            
-            using namespace std;
-            
-            int main()
-            {
+#include&lt;iostream&gt;
+#include&lt;cmath&gt;
+
+using namespace std;
+
+int main()
+{
     int a, b, c, x1, x2;
     float e;
     
@@ -40,22 +48,22 @@
     
     return 0;
 }
-</pre
->
-</div>
-<div class="code">
-    <h3>Q.2)</h3>
-    <pre>
-        #include&lt;iostream&gt;
-        
-        using namespace std;
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h3>Q.2)</h3>
+        <pre>
+#include&lt;iostream&gt;
 
-        int main()
-        {
-            int a, b, c;
-            
-            cout&lt;&lt;&#34;Enter the value of a : &#34;;
-            cin&gt;&gt;a;
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+    
+    cout&lt;&lt;&#34;Enter the value of a : &#34;;
+    cin&gt;&gt;a;
     
     cout&lt;&lt;&#34;Enter the value of b : &#34;;
     cin&gt;&gt;b;
@@ -69,14 +77,14 @@
     
     return 0;
 }
-</pre
->
-</div>
-<div class="code">
-    <h2>Extra questions</h2>
-    <h3>Q.1)</h3>
-    <pre>
-        #include&lt;iostream&gt;
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h2>Extra questions</h2>
+        <h3>Q.1)</h3>
+        <pre>
+#include&lt;iostream&gt;
 using namespace std;
 
 int main()
@@ -92,33 +100,33 @@ int main()
     cout&lt;&lt;&#34;\nThe values after swap are\n\ta = &#34;&lt;&lt;a&lt;&lt;&#34;, b = &#34;&lt;&lt;b;
     return 0;
 }
-</pre
->
-</div>
-<div class="code">
-    <h3>Q.2)</h3>
-    <pre>
-        #include&lt;iostream&gt;
-        using namespace std;
-        
-        int main()
-        {
-            char a;
-            cout&lt;&lt;&#34;Enter a charector : &#34;;
-            cin&gt;&gt;a;
-            cout&lt;&lt;&#34;\n\nThe ascii value of &#34;&lt;&lt;a&lt;&lt;&#34; is &#34;&lt;&lt;int(a);
-            return 0;
-        }
-    </pre
+            </pre
         >
-    </div>
-    <div class="code">
+      </div>
+      <div class="code">
+        <h3>Q.2)</h3>
+        <pre>
+#include&lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    char a;
+    cout&lt;&lt;&#34;Enter a charector : &#34;;
+    cin&gt;&gt;a;
+    cout&lt;&lt;&#34;\n\nThe ascii value of &#34;&lt;&lt;a&lt;&lt;&#34; is &#34;&lt;&lt;int(a);
+    return 0;
+}
+            </pre
+        >
+      </div>
+      <div class="code">
         <h3>Q.3)</h3>
         <pre>
-            #include&lt;iostream&gt;
-            using namespace std;
-            
-            int main()
+#include&lt;iostream&gt;
+using namespace std;
+
+int main()
 {
   float salary;
   cout&lt;&lt;&#34;Enter the salary : &#34;;
@@ -126,55 +134,55 @@ int main()
   cout&lt;&lt;&#34;The gross salary after adding DA and HRA is : &#34;&lt;&lt;(salary*19/10)&lt;&lt;&#34;\n&#34;;
   return 0;
 }
-</pre
->
-</div>
-</div>
-<div id="pract2">
-    <h2 class="divider">Practical 2</h2>
-    <div class="code">
+            </pre
+        >
+      </div>
+    </div>
+    <div id="pract2">
+      <h2 class="divider">Practical 2</h2>
+      <div class="code">
         <h3>Q.1)</h3>
         <pre>
-            #include&lt;iostream&gt;
-            #include&lt;cmath&gt;
-            
-            using namespace std;
-            
-            int main()
+#include&lt;iostream&gt;
+#include&lt;cmath&gt;
+
+using namespace std;
+
+int main()
 {
     int year;
     
     cout&lt;&lt; &#34; Enter the year :  &#34; ;
     cin&gt;&gt;year;
-    
+
     if ((year%4)==0 )
     {
-        cout&lt;&lt; &#34; The year is a leap year.&#34; ;
+    cout&lt;&lt; &#34; The year is a leap year.&#34; ;
     }
     else
     {
-        cout&lt;&lt; &#34; The year is a NOT leap year.&#34; ;
+    cout&lt;&lt; &#34; The year is a NOT leap year.&#34; ;
     }
     
     return 0;
 }
-    </pre
-    >
+            </pre
+        >
       </div>
       <div class="code">
         <h3>Q.2)</h3>
         <pre>
-            #include&lt;iostream&gt;
-            using namespace std;
-            
+#include&lt;iostream&gt;
+using namespace std;
+
 int main()
 {
     int num, temp, mod, arm=0;
-    
+
     cout&lt;&lt;&#34;Enter the number : &#34;;
     cin&gt;&gt;num;
     temp=num;
-    
+
     while (temp!=0)
     {
         mod = temp%10;
@@ -194,17 +202,17 @@ int main()
     
     return 0;
 }
-    </pre
+            </pre
         >
       </div>
       <div class="code">
         <h3>Q.3)</h3>
         <pre>
-            #include&lt;iostream&gt;
-            using namespace std;
-            
-            int main()
-            {
+#include&lt;iostream&gt;
+using namespace std;
+
+int main()
+{
     int num, temp, rev=0;
     cout&lt;&lt;&#34;Enter the number : &#34;;
     cin&gt;&gt;num;
@@ -222,28 +230,28 @@ int main()
     {
         cout&lt;&lt;&#34;The number is NOT a pelindrome.&#34;;
     }
-    
+
     return 0;
 }
-    </pre
-    >
-</div>
-<div class="code">
-    <h2>Extra questions</h2>
-    <h3>Q.)</h3>
-    <pre>
-        #include&lt;iostream&gt;
-        #include&lt;cmath&gt;
-        using namespace std;
-        
-        int main()
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h2>Extra questions</h2>
+        <h3>Q.)</h3>
+        <pre>
+#include&lt;iostream&gt;
+#include&lt;cmath&gt;
+using namespace std;
+
+int main()
 {
     int num;
     bool p = true;
-    
+
     cout&lt;&lt;&#34;Enter a number to check if it is prime : &#34;;
     cin&gt;&gt;num;
-    
+
     if((num%2)==0)
     {
         p=false;
@@ -260,9 +268,9 @@ int main()
         }
     }
             
-    if (p==true)
-    {
-        cout&lt;&lt;&#34;The entered number is a prime number.&#34;;
+        if (p==true)
+        {
+            cout&lt;&lt;&#34;The entered number is a prime number.&#34;;
         }
         else
         {
@@ -271,9 +279,10 @@ int main()
         
         return 0;
     }
-</pre>
-</div>
-</div>
+                </pre
+        >
+      </div>
+    </div>
     <div id="pract3">
       <h2 class="divider">Practical 3</h2>
       <div class="code">
@@ -287,82 +296,82 @@ int main()
       for (int i = 1; i &lt; 11; i++)
       {
           cout&lt;&lt;&#34;7 x &#34;&lt;&lt;i&lt;&lt;&#34; = &#34;&lt;&lt;7*i&lt;&lt;&#34;\n&#34;;
-        }
-        
+      }
+      
   }
-    </pre
-    >
-</div>
-<div class="code">
-    <h3>Q.2)</h3>
-    <pre>
-        #include&lt;iostream&gt;
-        using namespace std;
-        
-        int main()
-        {
-            for (int i = 100; i &gt; 0; i--)
-            {
-                cout&lt;&lt;i&lt;&lt;&#34;\n&#34;;
-            }
-            
-        }
-        </pre
+            </pre
+        >
+      </div>
+      <div class="code">
+        <h3>Q.2)</h3>
+        <pre>
+  #include&lt;iostream&gt;
+  using namespace std;
+  
+  int main()
+  {
+      for (int i = 100; i &gt; 0; i--)
+      {
+          cout&lt;&lt;i&lt;&lt;&#34;\n&#34;;
+      }
+      
+  }
+            </pre
         >
       </div>
       <div class="code">
         <h3>Q.3)</h3>
         <pre>
-            #include&lt;iostream&gt;
+  #include&lt;iostream&gt;
   using namespace std;
-  
+
   int main()
   {
       int num=1;
-      
+
       cout&lt;&lt;&#34;\n&#34;;
-      
+
       for (int i = 0; i &lt; 5; i++)
       {
           for (int j = 0; j &lt;= i; j++, num++)
           {
               cout&lt;&lt;num&lt;&lt;&#34; &#34;;
-            }
-            cout&lt;&lt;&#34;\n&#34;;
-        }
-        
-        return 0;
-    }
-    </pre
+          }
+          cout&lt;&lt;&#34;\n&#34;;
+      }
+      
+          return 0;
+      }
+            </pre
         >
-    </div>
-    <div class="code">
+      </div>
+      <div class="code">
         <h3>Q.4)</h3>
         <pre>
-            #include&lt;iostream&gt;
-            using namespace std;
-            
-            int main()
-            {
-                int n = 1;
-                cout&lt;&lt;&#34;\n\n&#34;;
-                for(int i = 5; i&gt;0; i--){
-                    for(int j = i; j&gt;1; j--){
-                        cout&lt;&lt;&#34; &#34;;
-                    }
+  #include&lt;iostream&gt;
+  using namespace std;
+  
+  int main()
+  {
+    int n = 1;
+    cout&lt;&lt;&#34;\n\n&#34;;
+    for(int i = 5; i&gt;0; i--){
+        for(int j = i; j&gt;1; j--){
+            cout&lt;&lt;&#34; &#34;;
+            }
         for(int k=1; k&lt;=n; k++){
             cout&lt;&lt;&#34;* &#34;;
+            }
+            cout&lt;&lt;&#34;\n&#34;;
+            n++;
         }
-        cout&lt;&lt;&#34;\n&#34;;
-        n++;
-    }
-    return 0;
+        return 0;
   }
-    </pre
+            </pre
         >
-    </div>
+      </div>
       <div class="code">
-          <h3 class="inlineclass">Q.4)</h3>
+        <h3 class="inlineclass">Q.4)</h3>
         <h3 class="pro inlineclass">pro</h3>
         <pre>
   #include&lt;iostream&gt;
@@ -377,33 +386,33 @@ int main()
     for(int i = r; i&gt;0; i--){
         for(int j = i; j&gt;1; j--){
             cout&lt;&lt;&#34; &#34;;
-        }
+            }
         for(int k=1; k&lt;=n; k++){
             cout&lt;&lt;&#34;* &#34;;
+            }
+            cout&lt;&lt;&#34;\n&#34;;
+            n++;
         }
-        cout&lt;&lt;&#34;\n&#34;;
-        n++;
-    }
-    return 0;
+        return 0;
   }
-  </pre
+            </pre
         >
-    </div>
+      </div>
     </div>
     <div id="pract4">
       <h2 class="divider">Practical 4</h2>
       <div class="code">
-          <h3>Q.1)</h3>
-          <pre></pre>
-        </div>
-        <div class="code">
-            <h3>Q.2)</h3>
-            <pre>
-                #include&lt;iostream&gt;
-                using namespace std;
-                
-                int main()
-                {
+        <h3>Q.1)</h3>
+        <pre></pre>
+      </div>
+      <div class="code">
+        <h3>Q.2)</h3>
+        <pre>
+  #include&lt;iostream&gt;
+  using namespace std;
+  
+  int main()
+  {
       int n;
 
       cout&lt;&lt;&#34;Enter the size of array : &#34;;
@@ -416,7 +425,7 @@ int main()
           cout&lt;&lt;&#34;Enter the element at index &#34;&lt;&lt;i&lt;&lt;&#34; : &#34;;
           cin&gt;&gt;a[i];
       }
-      
+
       for (int i = 0; i &lt; n; i++)
       {
           for (int j = (i+1); j &lt; n; j++)
@@ -426,20 +435,21 @@ int main()
                   cout&lt;&lt;&#34;The element &#34;&lt;&lt;a[i]&lt;&lt;&#34; is repeated.\n&#34;;
               }
               
-            }
-            
+          }
+          
       }
       
       return 0;
-    }
-</pre>
-</div>
-<div class="code">
-    <h3 class="inlineclass">Q.2)</h3>
-    <h3 class="pro inlineclass">pro</h3>
-    <pre>
-        #include&lt;iostream&gt;
-        using namespace std;
+  }
+              </pre
+        >
+      </div>
+      <div class="code">
+        <h3 class="inlineclass">Q.2)</h3>
+        <h3 class="pro inlineclass">pro</h3>
+        <pre>
+  #include&lt;iostream&gt;
+  using namespace std;
   
   int main()
   {
@@ -488,7 +498,8 @@ int main()
       
       return 0;
   }
-        </pre>
+              </pre
+        >
       </div>
       <div class="code">
         <h3>Q.3)</h3>
@@ -527,7 +538,8 @@ int main()
       return 0;
   }
         
-        </pre>
+              </pre
+        >
       </div>
       <div class="code">
         <h3>Q.4)</h3>
@@ -566,7 +578,8 @@ int main()
       
       return 0;
   }
-        </pre>
+              </pre
+        >
       </div>
     </div>
     <div id="pract5">
@@ -634,7 +647,8 @@ int main()
 
       return 0;
   }
-        </pre>
+              </pre
+        >
       </div>
       <div class="code">
         <h3>Q.2)</h3>
@@ -668,7 +682,8 @@ int main()
     
     return 0;
 }
-        </pre>
+              </pre
+        >
       </div>
     </div>
     <div id="pract6">
@@ -710,7 +725,8 @@ int main()
     
     return 0;
 }
-        </pre>
+              </pre
+        >
       </div>
       <div class="code">
         <h3>Q.2)</h3>
@@ -744,7 +760,8 @@ int main()
 
     return 0;
 }
-        </pre>
+              </pre
+        >
       </div>
     </div>
     <div id="pract7">
@@ -788,7 +805,8 @@ int main(){
     getch();
     return 0;   
 }
-        </pre>
+              </pre
+        >
       </div>
       <div class="code">
         <h3>Q.2)</h3>
@@ -827,7 +845,8 @@ int main(){
     getch();
     return 0;
 }
-        </pre>
+              </pre
+        >
       </div>
     </div>
     <div id="pract8">
@@ -864,7 +883,8 @@ int main()
 
     return 0;
 }
-        </pre>
+              </pre
+        >
       </div>
       <div class="code">
         <h3>Q.2)</h3>
@@ -894,7 +914,8 @@ int main()
 
     return 0;
 }
-        </pre>
+              </pre
+        >
       </div>
     </div>
     <div id="pract9">
@@ -935,7 +956,8 @@ int main()
 
     return 0;
 }
-        </pre>
+              </pre
+        >
       </div>
     </div>
     <div id="pract10">
@@ -968,7 +990,8 @@ int main()
     number n;
     return 0;
 }
-        </pre>
+              </pre
+        >
       </div>
       <div class="code">
         <h3>Q.2)</h3>
@@ -1032,7 +1055,9 @@ int main()
 
     return 0;
 }
-        </pre>
+              </pre
+        >
       </div>
     </div>
-{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mrz | project | calculator using HTML/CSS/JavaScript</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/tab.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=M+PLUS+1+Code:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/basicCalculator.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="logo" id="logo" />
+      </div>
+      <div id="webname" onclick="ToggleHide()">
+        <h1>mrz</h1>
+        <span id="aro"></span>
+      </div>
+      <div id="navdiv" class="navlist">
+        <ul id="navbar">
+          <li>
+            <a href="" onclick="location.reload();">Home</a>
+          </li>
+          <li>
+            <a href="https://techiverse7.blogspot.com/" target="blank">Blog</a>
+          </li>
+          <li>
+            <a href="https://github.com/mrz004" target="blank">GitHub</a>
+          </li>
+          <li>
+            <a href="codes.html" target="blank">Codes</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="in">
+        <pre>
+        <div class="num">Enter first number  : <input type="number" value="1" name="" id="number1"></div>
+        <div class="num">Enter second number : <input type="number" value="1" name="" id="number2"></div>
+        <div class="num"><span id="ans"></span><input type="number" value="1" name="" id="number3"></div>
+      </pre>
+      </div>
+      <div class="opretions">
+        <h3>Chose the opretion to perform on the two numbers:</h3>
+        <div class="symbols">
+          <button id="sum" class="opr">+</button>
+          <button id="diff" class="opr">-</button>
+          <button id="prod" class="opr">*</button>
+          <button id="divi" class="opr">/</button>
+        </div>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+    <script src="script/basicCalculator.js"></script>
+  </body>
+</html>

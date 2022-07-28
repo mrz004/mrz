@@ -1,2 +1,6 @@
-.idea
+temp.cpp
+temp.exe
 .vscode
+node_modules/
+package-lock.json
+package.json

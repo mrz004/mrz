@@ -4,7 +4,7 @@ if (window.innerWidth < 769) {
   document.getElementById("resNav").innerHTML = `
   <ul id="navbar">
           <li>
-            <a href="/">Home</a>
+            <a href="" onclick="location.reload();">Home</a>
           </li>
           <li>
             <a href="https://techiverse7.blogspot.com/" target="_blank">Blog</a>
@@ -20,7 +20,7 @@ if (window.innerWidth < 769) {
 
   document.getElementById("navbar").innerHTML = `
   <li>
-  <a href="/">Home</a>
+  <a href="" onclick="location.reload();">Home</a>
   </li>
   <li>
   <a href="https://techiverse7.blogspot.com/" target="_blank">Blog</a>
@@ -29,6 +29,7 @@ if (window.innerWidth < 769) {
   <a href="https://github.com/mrz004" target="_blank">GitHub</a>
   </li>
   <li>
+  <!-- <a href="codes.html" target="_blank">Codes</a> -->
   <a id="codesButton">Codes</a>
   </li>
   `;
