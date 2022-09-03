@@ -1,0 +1,28 @@
+/* *{
+    background-color: crimson;
+} */
+
+nav {
+  flex-direction: column;
+}
+
+.hambug {
+  display: flex;
+}
+
+nav > ul {
+  flex-direction: column;
+  display: none;
+}
+
+nav > ul > li {
+  margin: 1rem;
+}
+
+#githubList[open] > div {
+  position: unset;
+}
+
+#githubList a {
+    background-color: blue;
+}
